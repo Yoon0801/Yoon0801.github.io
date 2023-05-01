@@ -1,3 +1,154 @@
+/* ======================= color ======================= */
+/* font */
+/* ======================= layout scss ======================= */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 3rem 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.938rem;
+  background-color: hsl(208, 60%, 99%);
+  color: hsl(208, 8%, 45%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: hsl(208, 8%, 15%);
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding: 2rem 0 4rem;
+}
+.section .sectionTitle {
+  font-size: 1.5rem;
+}
+.section .sectionTitle .sectionSubTitle {
+  display: blcok;
+  font-size: 0.813rem;
+  margin-bottom: 3rem;
+}
+
+.sectionTitle,
+.sectionSubTitle {
+  text-align: center;
+}
+
+.container {
+  max-width: 768px;
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: hsl(208, 60%, 99%);
+}
+
+/* ======================= nav scss ======================= */
+.nav {
+  max-width: 968px;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .navLogo {
+  color: hsl(208, 69%, 61%);
+}
+.nav .navToggle {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.nav .navToggle:hover {
+  color: hsl(208, 69%, 61%);
+}
+.nav .navList {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.nav .navList .navLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.75rem;
+  color: hsl(208, 8%, 15%);
+  font-weight: 500;
+}
+.nav .navList .navLink:hover {
+  color: hsl(208, 69%, 61%);
+}
+.nav .navList .navLink .navIcon {
+  font-size: 1.2rem;
+}
+.nav .navClose {
+  position: absolute;
+  right: 1.3rem;
+  bottom: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: hsl(208, 69%, 61%);
+}
+.nav .navClose:hover {
+  color: hsl(208, 57%, 53%);
+}
+
+@media screen and (max-width: 767px) {
+  .navMenu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: hsl(208, 60%, 99%);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s;
+  }
+}
+.navLogo,
+.navToggle {
+  color: hsl(208, 8%, 15%);
+  font-weight: 500;
+}
+
+.showMenu {
+  bottom: 0;
+}
+
+/* ======================= loader scss ======================= */
 .loader {
   position: fixed;
   top: 0;

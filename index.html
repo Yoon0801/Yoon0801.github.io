@@ -11,6 +11,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,27 +27,55 @@
                 <ul class="navList grid">
                     <li class="navItem">
                         <a href="#About" class="navLink">
-                            <i class="fa fa-address-book" aria-hidden="true"></i>
+                            <i class="fa fa-address-book navIcon" aria-hidden="true"></i>
                             About
                         </a>
                     </li>
                     <li class="navItem">
-                        <a href="#games" class="navLink">
-                            <i class="fa fa-gamepad" aria-hidden="true"></i>
+                        <a href="#Games" class="navLink">
+                            <i class="fa fa-gamepad navIcon" aria-hidden="true"></i>
                             Games
                         </a>
                     </li>
                     <li class="navItem">
-                        <a href="" class="navLink">
-                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        <a href="#Project" class="navLink">
+                            <i class="fa fa-paper-plane navIcon" aria-hidden="true"></i>
                             Project
                         </a>
                     </li>
+                    <li class="navItem">
+                        <a href="#Skills" class="navLink">
+                            <i class="fa-solid fa-pencil navIcon"></i>
+                            Skills
+                        </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#Service" class="navLink">
+                            <i class="fa-solid fa-briefcase navIcon"></i>
+                            Service
+                        </a>
+                    </li>
+                    <li class="navItem">
+                        <a href="#Contact" class="navLink">
+                            <i class="fa-regular fa-envelope navIcon"></i>
+                            Contact
+                        </a>
+                    </li>
                 </ul>
+                <i class="fa-solid fa-x navClose" id="navClose"></i>
+            </div>
+            <div class="navBtns">
+                <div class="navToggle" id="navToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
         </div>
     </header>
     <!-- main -->
+    <main class="main">
+
+    </main>
+
     <!-- footer -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
@@ -53,17 +84,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script>
-        $(window).on('load', function () {
-            setTimeout(() => {
-                $('.loader').addClass("loader loaderHidden");
-            }, 1500);
-
-            $('.loader').on('transitionend', function(){
-                $('body .loader').remove();
-            });
-        });
-    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>

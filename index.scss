@@ -1,3 +1,157 @@
+@import "var";
+
+/* ======================= layout scss ======================= */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 0 $headerHeight 0;
+    font-family: $bodyFont;
+    font-size: $normalFontSize;
+    background-color: $bodyColor;
+    color: $textColor;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: $titleColor;
+    font-weight: $fontSemiBold;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    padding: 2rem 0 4rem;
+    .sectionTitle {
+        font-size: $h1FontSize;
+        .sectionSubTitle {
+            display: blcok;
+            font-size: $smallFontSize;
+            margin-bottom: $mb-3;
+        }
+    }
+}
+
+.sectionTitle,
+.sectionSubTitle {
+    text-align: center;
+}
+
+.container {
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: $zFixed;
+    background-color: $bodyColor;
+}
+
+/* ======================= nav scss ======================= */
+
+.nav {
+    max-width: 968px;
+    height: $headerHeight;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .navLogo {
+        color: $firstColor;
+    }
+    .navToggle {
+        font-size: 1.1rem;
+        cursor: pointer;
+        &:hover {
+            color: $firstColor;
+        }
+    }
+    .navList {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        .navLink{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: $smallerFontSize;
+            color: $titleColor;
+            font-weight: $fontMedium;
+            &:hover{
+                color: $firstColor;
+            }
+            .navIcon{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .navClose{
+        position: absolute;
+        right: 1.3rem;
+        bottom: 0.5rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: $firstColor;
+        &:hover{
+            color: $firstColorAlt;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navMenu {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        background-color: $bodyColor;
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: 0.3s;
+    }
+}
+
+.navLogo,
+.navToggle {
+    color: $titleColor;
+    font-weight: $fontMedium;
+}
+
+.showMenu{
+    bottom: 0;
+}
+
+/* ======================= loader scss ======================= */
 .loader {
     position: fixed;
     top: 0;
@@ -20,7 +174,7 @@
     }
 }
 
-.loaderHidden{
+.loaderHidden {
     opacity: 0;
     visibility: hidden;
 }

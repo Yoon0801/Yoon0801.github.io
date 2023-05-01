@@ -1,0 +1,55 @@
+$headerHeight: 3rem;
+
+/* ======================= color ======================= */
+
+$hueColor: 208;
+$firstColor: hsl($hueColor, 69%, 61%);
+$firstColorSecond: hsl($hueColor, 69%, 61%);
+$firstColorAlt: hsl($hueColor, 57%, 53%);
+$firstColorLighter: hsl($hueColor, 92%, 85%);
+$titleColor: hsl($hueColor, 8%, 15%);
+$textColor: hsl($hueColor, 8%, 45%);
+$textColorLight: hsl($hueColor, 8%, 65%);
+$inputColor: hsl($hueColor, 70%, 96%);
+$bodyColor: hsl($hueColor, 60%, 99%);
+$containerColor: #fff;
+
+/* font */
+$bodyFont: 'Poppins', sans-serif;
+
+$bigFontSize: 2rem;
+$h1FontSize: 1.5rem;
+$h2FontSize: 1.25rem;
+$h3FontSize: 1.125rem;
+$normalFontSize: 0.938rem;
+$smallFontSize: 0.813rem;
+$smallerFontSize: 0.75rem;
+
+$fontMedium: 500;
+$fontSemiBold: 600;
+
+$mb-0-25: 0.25rem;
+$mb-0-5: 0.5rem;
+$mb-0-75: 0.75rem;
+$mb-1: 1rem;
+$mb-1-5: 1.5rem;
+$mb-2: 2rem;
+$mb-2-5: 2.5rem;
+$mb-3: 3rem;
+
+$zToolTip: 10;
+$zFixed: 100;
+$zmodal: 1000;
+
+@media screen and (min-width: 968px) {
+    $bigFontsize: 3rem;
+    $h1FontSize: 2.25rem;
+    $h2FontSize: 1.5rem;
+    $h3FontSize: 1.25rem;
+    $normalFontSize: 1rem;
+    $smallFontSize: 0.875rem;
+    $smallerFontSize: 0.813rem;
+}
+
+
+
