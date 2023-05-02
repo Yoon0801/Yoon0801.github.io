@@ -148,6 +148,93 @@ img {
   bottom: 0;
 }
 
+/* ======================= home scss ======================= */
+.homeContainer {
+  gap: 1rem;
+}
+.homeContainer .homeContent {
+  grid-template-columns: 0.5fr 3fr;
+  padding-top: 3.5rem;
+  padding: 2rem;
+  align-items: center;
+}
+.homeContainer .homeContent .homeSocial {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1rem;
+}
+.homeContainer .homeContent .homeSocial .homeSocialIcon {
+  font-size: 1.25rem;
+  color: hsl(208, 69%, 61%);
+}
+.homeContainer .homeContent .homeSocial .homeSocialIcon:hover {
+  color: hsl(208, 57%, 53%);
+}
+.homeContainer .homeContent .homeImg .homeBlob {
+  width: 200px;
+  fill: hsl(208, 69%, 61%);
+}
+.homeContainer .homeContent .homeImg .homeBlob .homeBlobImg {
+  width: 300px;
+}
+.homeContainer .homeContent .homeData {
+  grid-column: 1/3;
+}
+.homeContainer .homeContent .homeData .homeTitle {
+  font-size: 2rem;
+}
+.homeContainer .homeContent .homeData .homeSubtitle {
+  font-size: 1.125rem;
+  color: hsl(208, 8%, 45%);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+.homeContainer .homeContent .homeData .homeDescription {
+  margin-bottom: 2rem;
+}
+.homeContainer .homeScroll .homeScrollButton {
+  color: hsl(208, 69%, 61%);
+  transition: 0.3s;
+}
+.homeContainer .homeScroll .homeScrollButton:hover {
+  transform: translateY(0.25rem);
+}
+.homeContainer .homeScroll .homeScrollButton .homeScrollMouse {
+  font-size: 2rem;
+}
+.homeContainer .homeScroll .homeScrollButton .homeScrollName {
+  font-size: 0.75rem;
+  color: hsl(208, 8%, 15%);
+  font-weight: 500;
+  margin-right: 0.25rem;
+}
+.homeContainer .homeScroll .homeScrollButton .homeScrollArrow {
+  font-size: 1.25rem;
+}
+
+/* ======================= button scss ======================= */
+.button {
+  display: inline-block;
+  background-color: hsl(208, 69%, 61%);
+  color: #FFF;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+.button:hover {
+  background-color: hsl(208, 57%, 53%);
+}
+.button .buttonIcon {
+  font-size: 1.25rem;
+  margin-left: 0.5rem;
+  transition: 0.3s;
+}
+
+.buttonFlex {
+  display: inline-flex;
+  align-items: center;
+}
+
 /* ======================= loader scss ======================= */
 .loader {
   position: fixed;

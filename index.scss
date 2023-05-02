@@ -151,6 +151,101 @@ img {
     bottom: 0;
 }
 
+/* ======================= home scss ======================= */
+
+.homeContainer{
+    gap: 1rem;
+    .homeContent{
+        grid-template-columns: .5fr 3fr;
+        padding-top: 3.5rem;
+        padding: 2rem;
+        align-items: center;
+        .homeSocial{
+            display: grid;
+            grid-template-columns: max-content;
+            row-gap: 1rem;
+            .homeSocialIcon{
+                font-size: 1.25rem;
+                color: $firstColor;
+                &:hover{
+                    color: $firstColorAlt;
+                }
+            }
+        }
+        .homeImg{
+            .homeBlob{
+                width: 200px;
+                fill: $firstColor;
+                .homeBlobImg{
+                    width: 300px; 
+                }
+            }
+        }
+
+        .homeData{
+            grid-column: 1/3;
+            .homeTitle{
+                font-size: $bigFontSize;
+            }
+            .homeSubtitle{
+                font-size: $h3FontSize;
+                color: $textColor;
+                font-weight: $fontMedium;
+                margin-bottom: $mb-0-75;
+            }
+            .homeDescription{
+                margin-bottom: $mb-2;
+            }
+        }
+    }
+    .homeScroll{
+        // display:none;
+        .homeScrollButton{
+            color: $firstColor;
+            transition: .3s;
+            &:hover{
+                transform: translateY(.25rem);
+            }
+            .homeScrollMouse{
+                font-size: 2rem;
+            }
+            .homeScrollName{
+                font-size: $smallerFontSize;
+                color: $titleColor;
+                font-weight: $fontMedium;
+                margin-right: $mb-0-25;
+            }
+            .homeScrollArrow{
+                font-size: 1.25rem;
+            }
+        }
+    }
+}
+
+/* ======================= button scss ======================= */
+
+.button{
+    display: inline-block;
+    background-color: $firstColor;
+    color: #FFF;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: $fontMedium;
+    &:hover{
+        background-color: $firstColorAlt;
+    }
+    .buttonIcon{
+        font-size: 1.25rem;
+        margin-left: $mb-0-5;
+        transition: .3s;
+    }
+}
+
+.buttonFlex{
+    display: inline-flex;
+    align-items: center;
+}
+
 /* ======================= loader scss ======================= */
 .loader {
     position: fixed;
