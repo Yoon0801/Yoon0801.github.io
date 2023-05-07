@@ -46,14 +46,14 @@ img {
 .section .sectionTitle {
   font-size: 1.5rem;
 }
-.section .sectionTitle .sectionSubTitle {
-  display: blcok;
+.section .sectionSubtitle {
+  display: block;
   font-size: 0.813rem;
   margin-bottom: 3rem;
 }
 
 .sectionTitle,
-.sectionSubTitle {
+.sectionSubtitle {
   text-align: center;
 }
 
@@ -216,7 +216,7 @@ img {
 .button {
   display: inline-block;
   background-color: hsl(208, 69%, 61%);
-  color: #FFF;
+  color: #fff;
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: 500;
@@ -235,6 +235,127 @@ img {
   align-items: center;
 }
 
+/* ======================= about scss ======================= */
+.aboutImg {
+  width: 200px;
+  border-radius: 0.5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.aboutDescription {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.aboutInfo {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2.5rem;
+}
+.aboutInfo .aboutInfoName {
+  font-size: 0.75rem;
+}
+.aboutInfo .aboutInfoTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: hsl(208, 8%, 15%);
+}
+.aboutInfo .aboutInfoTitle,
+.aboutInfo .aboutInfoName {
+  display: block;
+  text-align: center;
+}
+
+.aboutButtons {
+  justify-content: center;
+  display: flex;
+}
+
+/* ======================= skill scss ======================= */
+.skillsContainer {
+  row-gap: 0;
+}
+.skillsContainer .skillsHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  cursor: pointer;
+}
+.skillsContainer .skillsHeader .skillsIcon,
+.skillsContainer .skillsHeader .skillsArrow {
+  font-size: 2rem;
+  color: hsl(208, 69%, 61%);
+}
+.skillsContainer .skillsHeader .skillsIcon {
+  margin-right: 0.75rem;
+}
+.skillsContainer .skillsHeader .skillsIcon .skillsTitle {
+  font-size: 1.125rem;
+}
+.skillsContainer .skillsHeader .skillsIcon .skillsSubtitle {
+  font-size: 0.813rem;
+  color: hsl(208, 8%, 65%);
+}
+.skillsContainer .skillsHeader .skillsArrow {
+  margin-left: auto;
+  transition: 0.4s;
+}
+.skillsContainer .skillsList .skillsTitles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.skillsContainer .skillsList .skillsTitles .skillsName {
+  font-size: 0.938rem;
+  font-weight: 500;
+}
+.skillsContainer .skillsList .skillsBar,
+.skillsContainer .skillsList .skillsPercentage {
+  height: 5px;
+  border-radius: 0.25rem;
+}
+.skillsContainer .skillsList .skillsBar {
+  background-color: hsl(208, 92%, 85%);
+}
+.skillsContainer .skillsList .skillsPercentage {
+  display: block;
+  background-color: hsl(208, 69%, 61%);
+}
+.skillsContainer .skillsList .skillsHtml {
+  width: 90%;
+}
+.skillsContainer .skillsList .skillsCss {
+  width: 50%;
+}
+.skillsContainer .skillsList .skillsJs {
+  width: 40%;
+}
+.skillsContainer .skillsList .skillsVue {
+  width: 10%;
+}
+.skillsContainer .skillsList .skillsCSharp {
+  width: 50%;
+}
+.skillsContainer .skillsList .skillsSQL {
+  width: 50%;
+}
+.skillsContainer .skillsClose .skillsList {
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.skillsContainer .skillsOpen .skillsList {
+  height: -moz-max-content;
+  height: max-content;
+  margin-bottom: 2.5rem;
+  transition: 0.5s;
+}
+.skillsContainer .skillsOpen .skillsArrow {
+  transform: rotate(-180deg);
+}
+
+/* ======================= qualification scss ======================= */
 /* ======================= loader scss ======================= */
 .loader {
   position: fixed;
