@@ -265,12 +265,12 @@
 
             <div class="qualificationContainer container">
                 <div class="qualifictionTabs">
-                    <div class="qualificationButton buttonFlex">
+                    <div class="qualificationButton buttonFlex" data-target="#education">
                         <i class="uil uil-graduation-cap qualificationIcon"></i>
                         Education
                     </div>
 
-                    <div class="qualificationButton buttonFlex">
+                    <div class="qualificationButton buttonFlex qualificationActive" data-target="#work">
                         <i class="uil uil-briefcase-alt qualificationIcon"></i>
                         Work
                     </div>
@@ -278,7 +278,7 @@
 
                 <div class="qualificationSections">
                     <!-- Work -->
-                    <div class="qualificationContent">
+                    <div class="qualificationContent qualificationActive" data-content id="work">
                         <div class="qualificationData">
                             <div>
                                 <h3 class="qualificationTitle">Full Stack Developer</h3>
@@ -309,8 +309,6 @@
                                     2020.09 - 2021.06
                                 </div>
                             </div>
-
-
                         </div>
 
                         <div class="qualificationData">
@@ -331,7 +329,7 @@
                     </div>
 
                     <!-- Education -->
-                    <div class="qualificationContent">
+                    <div class="qualificationContent" data-content id="education">
                         <div class="qualificationData">
                             <div>
                                 <h3 class="qualificationTitle">Department of Forestry and Natural Resources</h3>
@@ -344,9 +342,10 @@
 
                             <div>
                                 <span class="qualificationRounder"></span>
-                                <span class="qualificationLine"></span>
+                                <!-- <span class="qualificationLine"></span> -->
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>

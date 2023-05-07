@@ -356,6 +356,66 @@ img {
 }
 
 /* ======================= qualification scss ======================= */
+.qualifictionTabs {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+.qualifictionTabs .qualificationButton {
+  font-size: 1.125rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.qualifictionTabs .qualificationButton:hover {
+  color: hsl(208, 69%, 61%);
+}
+.qualifictionTabs .qualificationButton .qualificationIcon {
+  font-size: 1.8rem;
+  margin-right: 0.25rem;
+}
+
+.qualificationData {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+.qualificationData .qualificationTitle {
+  font-size: 0.938rem;
+  font-weight: 500;
+}
+.qualificationData .qualificationSubtitle {
+  display: inline-block;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+.qualificationData .qualificationCalendar {
+  font-size: 0.75rem;
+  color: hsl(208, 8%, 65%);
+}
+.qualificationData .qualificationRounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: hsl(208, 69%, 61%);
+  border-radius: 50%;
+}
+.qualificationData .qualificationLine {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: hsl(208, 69%, 61%);
+  transform: translate(6px, -7px);
+}
+
+.qualification [data-content] {
+  display: none;
+}
+
+.qualificationActive[data-content] {
+  display: block;
+}
+
 /* ======================= loader scss ======================= */
 .loader {
   position: fixed;

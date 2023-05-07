@@ -379,8 +379,64 @@ img {
 }
 
 /* ======================= qualification scss ======================= */
-.qualificationTabs{
-    
+.qualifictionTabs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: $mb-2;
+    .qualificationButton{
+        font-size: $h3FontSize;
+        font-weight: $fontMedium;
+        cursor: pointer;
+        &:hover{
+            color: $firstColor;
+        }
+        .qualificationIcon{
+            font-size: 1.8rem;
+            margin-right: $mb-0-25;
+        }
+    }
+}
+
+.qualificationData{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+    .qualificationTitle{
+        font-size: $normalFontSize;
+        font-weight: $fontMedium;
+    }
+    .qualificationSubtitle{
+        display: inline-block;
+        font-size: $smallerFontSize;
+        margin-bottom: $mb-1;
+    }
+    .qualificationCalendar{
+        font-size: $smallerFontSize;
+        color: $textColorLight;
+    }
+
+    .qualificationRounder{
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        background-color: $firstColor;
+        border-radius: 50%;
+    }
+    .qualificationLine{
+        display: block;
+        width: 1px;
+        height: 100%;
+        background-color: $firstColor;
+        transform: translate(6px, -7px);
+    }
+}
+
+.qualification [data-content]{
+    display: none;
+}
+
+.qualificationActive[data-content]{
+    display: block;
 }
 
 /* ======================= loader scss ======================= */

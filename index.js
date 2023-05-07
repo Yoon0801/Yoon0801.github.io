@@ -52,3 +52,25 @@ $('.skillsHeader').on('click', function() {
 //         content.addClass('skillsContent skillsClose');
 //     }
 // });
+
+// qualification part js
+const tabs = document.querySelectorAll('[data-target]');
+const tabContents = document.querySelectorAll('[data-content]');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () =>{
+        const target = document.querySelector(tab.dataset.target);
+
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('qualificationActive');
+        });
+
+        target.classList.add('qualificationActive');
+
+        tabs.forEach(tab => {
+            tab.classList.remove('qualificationActive');
+        });
+
+        tab.classList.add('qualificationActive');
+    });
+});
